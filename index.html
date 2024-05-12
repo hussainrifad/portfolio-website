@@ -8,28 +8,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
 </head>
-<body class="bg-dark text-light container">
-    <nav class="d-flex justify-content-around align-items-center mt-5">
+<body class="bg-dark text-light container-md">
+    <nav class="d-md-flex justify-content-around align-items-center mt-5">
         <div>
-            <h2 class="mt-2">LOGO</h2>
+            <h2 class="mt-2">R</h2>
         </div>
-        <div class="d-flex w-50 list-inline justify-content-between align-items-center">
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>About</li>
+        <div class="d-md-flex w-50 list-inline justify-content-between align-items-center">
+            <li class="my-2 md-my-0">Home</li>
+            <li class="my-2 md-my-0">Projects</li>
+            <li class="my-2 md-my-0">Skills</li>
+            <li class="my-2 md-my-0">About</li>
             <button class="btn btn-light">Resume</button>
         </div>
     </nav>
-    <section class="mt-5 d-flex justify-content-around align-items-center">
-        <div class="w-50">
+    <section class="mt-5 d-flex flex-column-reverse flex-md-row justify-content-around align-items-center">
+        <div class="w-md-50">
             <div>
                 <h1>HI !</h1>
                 <h1>I'M HUSSAIN RIFAD</h1>
                 <h5>Web Developer || Django Developer || Backend Developer</h5>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sequi, consequatur delectus repudiandae accusantium doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut praesentium dignissimos consectetur labore, hic saepe tenetur sit repellendus veniam maxime?</p>
+                <p>Highly skilled and motivated backend developer with [X years] of experience designing, implementing, and maintaining server-side solutions for web applications and software systems. Proficient in a range of backend technologies and programming languages, including Python, Java, and Node.js, with a strong emphasis on building scalable, secure, and efficient systems.</p>
             </div>
             <div class="list-inline d-flex gap-4 icon-size">
                 <li><i class="fa-brands fa-github"></i></li>
@@ -37,16 +37,18 @@
                 <li><i class="fa-brands fa-youtube"></i></li>
             </div>
         </div>
-        <div class="50">
-            <img style="height: 500px;" src="./images/gias.jpg" alt="">
+        <div class="w-md-50">
+            <img style="height: 500px;" src="./images/Screenshot 2023-10-24 131411.jpg" alt="">
         </div>
     </section>
     <!-- projects section  -->
     <section>
         <h1 class="text-center mt-5">Portfolio</h1>
-        <div class="d-flex m-5 border shadow-lg rounded">
-            <img class="w-50" src="./projects-img/travel-guru-map.png" alt="">
-            <div class="ms-4">
+        <div class="d-flex flex-column flex-md-row m-5 border shadow-lg rounded">
+            <div class="w-md-50">
+                <img class="w-100" src="./projects-img/travel-guru-map.png" alt="">
+            </div>
+            <div class="w-md-50 ms-4 p-2">
                 <div class="d-flex align-items-center gap-5">
                     <h2>Online University</h2>
                     <i class="fa-solid fa-school"></i>
@@ -66,9 +68,11 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex m-5 border shadow-lg rounded">
-            <img class="w-50" src="./projects-img/travel-guru-map.png" alt="">
-            <div class="ms-4">
+        <div class="d-md-flex m-5 border shadow-lg rounded">
+            <div class="w-md-50">
+                <img class="w-100" src="./projects-img/Travel-Search.png" alt="">
+            </div>
+            <div class="w-md-50 ms-4 p-2">
                 <div class="d-flex align-items-center gap-5">
                     <h2>Online University</h2>
                     <i class="fa-solid fa-school"></i>
@@ -115,7 +119,7 @@
         </div>
     </section>
     <!-- contact form -->
-    <section class="d-flex flex-column align-items-center">
+    <section class="d-flex flex-column align-items-sm-center">
         <h1>Contact with me</h1>
         <div class="d-flex flex-column align-items-center gap-3 mt-4 mb-4">
             <input type="email" placeholder="enter email" class="form-control" id="inputEmail4">
