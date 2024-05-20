@@ -7,8 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
-<body class="bg-dark text-light container-md">
+<body class="bg-dark text-light container">
     <nav class="d-md-flex justify-content-around align-items-center mt-5">
         <div>
             <h2 class="mt-2">R</h2>
@@ -22,14 +25,14 @@
         </div>
     </nav>
     <section class="mt-5 d-flex flex-column-reverse flex-md-row justify-content-around align-items-center">
-        <div class="w-md-50">
+        <div class="w-md-50 my-5">
             <div>
                 <h1>HI !</h1>
                 <h1>I'M HUSSAIN RIFAD</h1>
                 <h5>Web Developer || Django Developer || Backend Developer</h5>
             </div>
             <div>
-                <p>Highly skilled and motivated backend developer with [X years] of experience designing, implementing, and maintaining server-side solutions for web applications and software systems. Proficient in a range of backend technologies and programming languages, including Python, Java, and Node.js, with a strong emphasis on building scalable, secure, and efficient systems.</p>
+                <p>Highly skilled and motivated backend developer with 2 years of experience designing, implementing, and maintaining server-side solutions for web applications and software systems. Proficient in a range of backend technologies and programming languages, including Python, Java, and Node.js, with a strong emphasis on building scalable, secure, and efficient systems.</p>
             </div>
             <div class="list-inline d-flex gap-4 icon-size">
                 <li><i class="fa-brands fa-github"></i></li>
@@ -44,79 +47,139 @@
     <!-- projects section  -->
     <section>
         <h1 class="text-center mt-5">Portfolio</h1>
-        <div class="d-flex flex-column flex-md-row m-5 border shadow-lg rounded">
-            <div class="w-md-50">
-                <img class="w-100" src="./projects-img/travel-guru-map.png" alt="">
-            </div>
-            <div class="w-md-50 ms-4 p-2">
-                <div class="d-flex align-items-center gap-5">
-                    <h2>Online University</h2>
-                    <i class="fa-solid fa-school"></i>
+        <div class="container-md my-5 shadow-lg p-4">
+            <div id="id-portfolio" class="row project-section">
+                <div id="p-right" class="col-md-6 project-image">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./projects-img/preview.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./projects-img/Travel-Search.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./projects-img/travel-guru-map.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-                <p>
-                    A project summary is a document or part of a larger document that's comprehensive but concise in providing an overview of the proposed project, including key details. It also outlines the project's objectives, background information to place it in context, requirements, problems, analysis and ends with a conclusion.
-                </p>
-                <div>
-                    
-                </div>
-                <div class="list-inline d-flex justify-content-around icon-size">
-                    <li><i class="fa-brands fa-html5"></i></li>
-                    <li><i class="fa-brands fa-css3-alt"></i></li>
-                    <li><i class="fa-brands fa-js"></i></li>
-                    <li><i class="fa-brands fa-python"></i></li>
-                    <li><i class="fa-brands fa-reacteurope"></i></li>
-                </div>
-            </div>
-        </div>
-        <div class="d-md-flex m-5 border shadow-lg rounded">
-            <div class="w-md-50">
-                <img class="w-100" src="./projects-img/Travel-Search.png" alt="">
-            </div>
-            <div class="w-md-50 ms-4 p-2">
-                <div class="d-flex align-items-center gap-5">
-                    <h2>Online University</h2>
-                    <i class="fa-solid fa-school"></i>
-                </div>
-                <p>
-                    A project summary is a document or part of a larger document that's comprehensive but concise in providing an overview of the proposed project, including key details. It also outlines the project's objectives, background information to place it in context, requirements, problems, analysis and ends with a conclusion.
-                </p>
-                <div>
-                    
-                </div>
-                <div class="list-inline d-flex justify-content-around icon-size">
-                    <li><i class="fa-brands fa-html5"></i></li>
-                    <li><i class="fa-brands fa-css3-alt"></i></li>
-                    <li><i class="fa-brands fa-js"></i></li>
-                    <li><i class="fa-brands fa-python"></i></li>
-                    <li><i class="fa-brands fa-reacteurope"></i></li>
+                <div id="p-left" class="col-md-6 project-details">
+                    <h2>DIGI Agency</h2>
+                    <p>DIGI Agency one of the leading Digital Marketing agencies in Bangladesh. With our innovative strategies and results-oriented approach, we help businesses thrive in the digital world. Partner with us to achieve measurable results and drive your business growth. Explore the transformative power of DIGI Agency and unlock the full potential of your online success.</p>
+                    <div>
+                        <button class="btn btn-primary">Live Website<i class="ms-2 fa-solid fa-arrow-up-right-from-square"></i></button>
+                        <button class="btn btn-primary">Code<i class="ms-2 fa-solid fa-code"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="container-md my-5 shadow-lg p-4">
+            <div id="id-portfolio" class="row project-section">
+                <div id="p-right" class="col-md-6 project-image">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./projects-img/travel-guru-map.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./projects-img/Travel-Search.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./projects-img/preview.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="p-left" class="col-md-6 project-details">
+                    <h2>MOBO Ride</h2>
+                    <p>MOBO Ride one of the best ride sharing platform in Bangladesh. With our innovative strategies and results-oriented approach, we help businesses thrive in the digital world. Partner with us to achieve measurable results and drive your business growth. Explore the transformative power of MOBO Ride and unlock the full potential of your online success.Being accessible and responsive to our customers is something that we strive for at Mobo. Customer satisfaction is our number one priority. We read, discuss and appreciate all reviews and feedback. Something that we sometimes hear from customers is, "Where can I try the Mobo Cruisers?" This is understandable since you want to know what you are getting when making a big purchase.</p>
+                    <div>
+                        <button class="btn btn-primary">Live Website<i class="ms-2 fa-solid fa-arrow-up-right-from-square"></i></button>
+                        <button class="btn btn-primary">Code<i class="ms-2 fa-solid fa-code"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </section>
     <!-- expertise -->
-    <section>
-        <h2>Expertise</h2>
-        <div class="list-inline d-flex justify-content-between w-50 gap-3 my-5 flex-wrap">
-            <li class="btn btn-secondary">C</li>
-            <li class="btn btn-secondary">C++</li>
-            <li class="btn btn-secondary">Python</li>
-            <li class="btn btn-secondary">JavaScript</li>
-            <li class="btn btn-secondary">React</li>
-            <li class="btn btn-secondary">Django</li>
-            <li class="btn btn-secondary">MySql</li>
-            <li class="btn btn-secondary">Data Structure And Algorithms</li>
+    <section class="d-md-flex flex-row-reverse gap-5">
+        <div id="edu" class="my-5">
+            <h2>Education</h2>
+            <div>
+                <h1>ITMO University</h1>
+                <p>B.Sc in Computer Science</p>
+            </div>
         </div>
-    </section>
-    <!-- Tools -->
-    <section>
-        <h2>Tools</h2>
-        <div class="list-inline d-flex justify-content-between w-50 gap-3 my-5 flex-wrap"">
-            <li class="btn btn-secondary">VS Code</li>
-            <li class="btn btn-secondary">Git</li>
-            <li class="btn btn-secondary">JIRA</li>
-            <li class="btn btn-secondary">Noton</li>
-            <li class="btn btn-secondary">Trello</li>
-        </div>
+        <div class="w-md-50">
+            <div class="my-5">
+                <h2>Expertise</h2>
+                <div class="list-inline d-flex justify-content-between w-100 gap-3 my-3 flex-wrap">
+                    <li class="btn btn-secondary">C</li>
+                    <li class="btn btn-secondary">C++</li>
+                    <li class="btn btn-secondary">Python</li>
+                    <li class="btn btn-secondary">JavaScript</li>
+                    <li class="btn btn-secondary">React</li>
+                    <li class="btn btn-secondary">Django</li>
+                    <li class="btn btn-secondary">MySql</li>
+                    <li class="btn btn-secondary">Data Structure And Algorithms</li>
+                </div>
+            </div>
+            <div class="my-5">
+                <h2>Tools</h2>
+                <div class="list-inline d-flex justify-content-between w-100 gap-3 my-3 flex-wrap"">
+                    <li class="btn btn-secondary">VS Code</li>
+                    <li class="btn btn-secondary">Git</li>
+                    <li class="btn btn-secondary">JIRA</li>
+                    <li class="btn btn-secondary">Noton</li>
+                    <li class="btn btn-secondary">Trello</li>
+                </div>
+            </div>
+            <div class="my-5">
+                <h2>Familiar</h2>
+                <div class="list-inline d-flex justify-content-between w-100 gap-3 my-3 flex-wrap"">
+                    <li class="btn btn-secondary">React</li>
+                    <li class="btn btn-secondary">Django</li>
+                    <li class="btn btn-secondary">MySql</li>
+                    <li class="btn btn-secondary">HTML</li>
+                    <li class="btn btn-secondary">CSS</li>
+                    <li class="btn btn-secondary">Redux</li>
+                </div>
+            </div>
+            <div class="my-5">
+                <h2>Comfortable</h2>
+                <div class="list-inline d-flex justify-content-between w-100 gap-3 my-3 flex-wrap"">
+                    <li class="btn btn-secondary">C++</li>
+                    <li class="btn btn-secondary">Tailwind</li>
+                    <li class="btn btn-secondary">CSS</li>
+                    <li class="btn btn-secondary">JavaScript</li>
+                    <li class="btn btn-secondary">React</li>
+                    <li class="btn btn-secondary">Python</li>
+                </div>
+            </div>
+        </div>    
     </section>
     <!-- contact form -->
     <section class="d-flex flex-column align-items-sm-center">
@@ -141,5 +204,6 @@
             </div>
         </div>
     </Footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
